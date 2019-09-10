@@ -20,3 +20,4 @@
   	<script src="../js/template.js"></script>
   	<script src="../js/pages/dashboard.js"></script>
   	<script src="../js/demo.js"></script>
+    <script src="../js/pages/data-table.js"></script>
