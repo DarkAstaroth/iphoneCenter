@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../images/favicon.png">
-    <title>NeoX Admin - Dashboard</title>
+    <title>iPhoneCenter - App</title>
 	<link rel="stylesheet" href="../../assets/vendor_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="../css/bootstrap-extend.css">
 	<link rel="stylesheet" href="../css/master_style.css">
