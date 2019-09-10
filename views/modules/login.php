@@ -31,7 +31,7 @@
 			<div class="card-body">
 			  <img src="images/avatar/2.jpg" class="img-fluid rounded-circle w-150 mb-10">
 			  <h4 class="text-center mb-20">Mario Silva</h4>
-			  <form action="src/pages/home.php" method="post" class="form-signin">
+			  <form action="src/pages/index.php?action=home" method="post" class="form-signin">
 				<input type="email" class="form-control mb-2" placeholder="Email" required autofocus>
 				<input type="password" class="form-control mb-2" placeholder="Password" required>
 				<button class="btn btn-lg btn-primary btn-block mb-20" type="submit">Iniciar Sesion</button>

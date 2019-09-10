@@ -8,15 +8,15 @@ class MvcController{
 
 	public function header()
 	{
-		include "../../views/src/full-header.php";
+		include "fullHeader.php";
 	}
-	public function panel()
+	public function body()
 	{
-		include "../../views/src/panel.php";
+		include "body.php";
 	}
 		public function footer()
 	{
-		include "../../views/src/full-footer.php";
+		include "fullFooter.php";
 	}
 
 	public function enlacesPaginasController(){
