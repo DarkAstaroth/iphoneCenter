@@ -7,7 +7,7 @@
       <span class="sr-only">Toggle navigation</span>
     </a>
   <!-- Logo -->
-  <a href="index.html" class="logo">
+  <a href="index.php?action=home" class="logo">
     <!-- mini logo -->
       <!-- <b class="logo-mini">
         <span class="light-logo"><img src="../../images/logo-dark.png" alt="logo"></span>

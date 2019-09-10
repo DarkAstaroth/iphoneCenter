@@ -3,7 +3,8 @@
 
     	public function enlacesPaginasModel($enlacesModel)
     	{
-    		if ($enlacesModel == "home") {
+    		if ($enlacesModel == "home" ||
+            $enlacesModel == "usuarios") {
     			$module="../../views/modules/".$enlacesModel.".php";
     		}
     		else {
