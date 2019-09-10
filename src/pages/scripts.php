@@ -20,4 +20,6 @@
   	<script src="../js/template.js"></script>
   	<script src="../js/pages/dashboard.js"></script>
   	<script src="../js/demo.js"></script>
+    <!-- datatables -->
     <script src="../js/pages/data-table.js"></script>
+    <script src="../../assets/vendor_components/datatable/datatables.min.js"></script>
