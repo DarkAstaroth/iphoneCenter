@@ -1,3 +1,6 @@
+
+
+
 <header class="main-header">
     <!-- Sidebar toggle button-->
     <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -6,14 +9,14 @@
   <!-- Logo -->
   <a href="index.html" class="logo">
     <!-- mini logo -->
-    <b class="logo-mini">
-      <span class="light-logo"><img src="../../images/logo-light.png" alt="logo"></span>
-      <span class="dark-logo"><img src="../../images/logo-dark.png" alt="logo"></span>
-    </b>
+      <!-- <b class="logo-mini">
+        <span class="light-logo"><img src="../../images/logo-dark.png" alt="logo"></span>
+        <span class="dark-logo"><img src="../../images/logo-dark.png" alt="logo"></span>
+      </b> -->
     <!-- logo-->
     <span class="logo-lg">
-      <img src="../../images/logo-light-text.png" alt="logo" class="light-logo">
-      <img src="../../images/logo-dark-text.png" alt="logo" class="dark-logo">
+        <img src="../../images/logo-dark.png" alt="logo" class="light-logo">
+      <img src="../../images/logo-dark.png" alt="logo" class="dark-logo">
     </span>
   </a>
   <!-- Header Navbar -->
