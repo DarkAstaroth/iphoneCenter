@@ -33,6 +33,7 @@
                     							<th>Nombres</th>
                     							<th>Tipo</th>
                     							<th>Estado </th>
+                                  <th>Acciones </th>
                     						</tr>
                                 <tbody>
                       						<tr>
@@ -40,16 +41,18 @@
                       							<td>mninahuanca4@gmail.com</td>
                       							<td>Manuel Ninahuanca Ayala</td>
                       							<td>admin</td>
-                      							<td><span class="badge badge-success">Success</span></td>
+                      							<td>
+                                        <span class="badge badge-success">Activo</span>
+                                        <span class="badge badge-warning">inhabilitado</span>
+                                    </td>
+                                    <td>      
+                                          <a href="" data-toggle="tooltip" data-placement="top" title="Desbloquear"><i class="fa fa-unlock fa-2x" to> </i></a>
+                                          <a href="" data-toggle="tooltip" data-placement="top" title="Bloquear"><i class="fa fa-lock fa-2x"> </i></a>
+                                          <a href="" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil fa-2x"> </i></a>
+                                          <a href="" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fa fa-trash fa-2x"> </i></a>
+                                    </td>
                       						</tr>
-                                  <tr>
-                      							<td>2</td>
-                      							<td>mninahuanca4@gmail.com</td>
-                      							<td>Karen Saavedra</td>
-                      							<td>admin</td>
-                      							<td><span class="badge badge-success">Success</span></td>
-                      						</tr>
-                                </tbodyZ
+                                </tbody>
                     					</thead>
                             </table>
                           </div>

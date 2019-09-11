@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../css/bootstrap-extend.css">
 	<link rel="stylesheet" href="../css/master_style.css">
 	<link rel="stylesheet" href="../css/skins/_all-skins.css">
+  <link rel="stylesheet" href="../css/icons/font-awesome/css/font-awesome.css">
   </head>
 
   <body class="sidebar-mini skin-black-light">
