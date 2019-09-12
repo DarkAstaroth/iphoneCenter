@@ -23,3 +23,17 @@
     <!-- datatables -->
     <script src="../js/pages/data-table.js"></script>
     <script src="../../assets/vendor_components/datatable/datatables.min.js"></script>
+    <!-- popper -->
+    <script src="../../assets/vendor_components/popper/dist/popper.min.js"></script>
+    <!-- formarter -->
+    <script src="../../assets/vendor_components/formatter/formatter.js"></script>
+	  <script src="../../assets/vendor_components/formatter/jquery.formatter.js"></script>
+    <script src="../js/pages/formatter.js"></script>	
+    <!-- form validation -->
+    <script src="../js/pages/validation.js"></script>
+    <script>
+    ! function(window, document, $) {
+        "use strict";
+			$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+		}(window, document, jQuery);
+    </script>
