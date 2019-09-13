@@ -1,4 +1,27 @@
 
+	<?php if (isset($_GET['action'])): ?>
+
+		<?php if ($_GET['action'] =='okusu'): ?>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+			<script type="text/javascript">
+				 swal("Buen Trabajo!", "Se ha registrado el usuario correctamente!", "success");
+			</script>
+		<?php endif ?>
+
+	<?php endif ?>
+
+	<?php if (isset($_GET['action'])): ?>
+
+		<?php if ($_GET['action'] =='no'): ?>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+			<script type="text/javascript">
+				 swal("Error!", "Se ha producido un error intenta nuevamente", "error");
+			</script>
+		<?php endif ?>
+
+	<?php endif ?>
+
+
               <div class="content-wrapper">
                 <section class="content-header">
                   <h1>
@@ -10,7 +33,6 @@
                   </ol>
                 </section>
                 <section class="content">
-
                   <!-- sample modal content -->
                   <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           					<div class="modal-dialog">
@@ -29,18 +51,23 @@
                         <div class="tab-content tabcontent-border">
                           <div class="tab-pane active" id="home" role="tabpanel">
                             <div class="pad">
-                                <form class="" action="index.html" method="post">
+
+                                <form method="post">
+                                  <?php
+                                    $registro = new MvcController();
+                                    $registro-> registroUsuarioController();
+                                  ?>
                                 <div class="form-group">
                                   <label for="">Email</label>
                                   <div class="controls">
-                                    <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="email" name="email" class="form-control" required data-validation-required-message="Este campo es requerido">
                                   </div>
                                 </div>
 
                                 <div class="form-group">
                                   <label for="">Nombres</label>
                                   <div class="controls">
-                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="Este campo es requerido">
                                   </div>
                                 </div>
 
@@ -49,7 +76,7 @@
                                     <div class="form-group">
                                       <label for="">Paterno</label>
                                       <div class="controls">
-                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="This field is required">
+                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="Este campo es requerido">
                                       </div>
                                     </div>
                                   </div>
@@ -57,7 +84,7 @@
                                     <div class="form-group">
                                       <label for="">Materno</label>
                                       <div class="controls">
-                                        <input type="text" name="materno" class="form-control" required data-validation-required-message="This field is required">
+                                        <input type="text" name="materno" class="form-control"  data-validation-required-message="Este campo es requerido">
                                       </div>
                                     </div>
                                   </div>
@@ -72,19 +99,19 @@
                                   <div class="col-md-6">
                                     <div class="form-group">
                                       <label for="">Telefono</label>
-                                      <input type="number" name="telefono" class="form-control" required data-validation-required-message="This field is required" max="11">
+                                      <input type="number" name="telefono" class="form-control"  data-validation-required-message="Este campo es requerido" >
                                     </div>
                                   </div>
                                 </div>
                                 <div class="form-group">
                                   <label for="">Dirección</label>
                                     <div class="controls">
-                                      <textarea name="dir" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                      <textarea name="dir" id="textarea" class="form-control"  placeholder="Textarea text"> </textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
-                                  <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
+                                  <button type="submit" class="btn btn-success waves-effect">Registrar </button>
                                 </div>
                               </form>
                             </div>
@@ -96,14 +123,14 @@
                                 <div class="form-group">
                                   <label for="">Email</label>
                                   <div class="controls">
-                                    <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="email" name="email" class="form-control" required data-validation-required-message="Este campo es requerido">
                                   </div>
                                 </div>
 
                                 <div class="form-group">
                                   <label for="">Nombres</label>
                                   <div class="controls">
-                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="Este campo es requerido">
                                   </div>
                                 </div>
 
@@ -112,7 +139,7 @@
                                     <div class="form-group">
                                       <label for="">Paterno</label>
                                       <div class="controls">
-                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="This field is required">
+                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="Este campo es requerido">
                                       </div>
                                     </div>
                                   </div>
@@ -120,7 +147,7 @@
                                     <div class="form-group">
                                       <label for="">Materno</label>
                                       <div class="controls">
-                                        <input type="text" name="materno" class="form-control" required data-validation-required-message="This field is required">
+                                        <input type="text" name="materno" class="form-control" required data-validation-required-message="Este campo es requerido">
                                       </div>
                                     </div>
                                   </div>
@@ -136,7 +163,7 @@
                                   <div class="col-md-6">
                                     <div class="form-group">
                                       <label for="">Telefono</label>
-                                      <input type="number" name="telefono" class="form-control" required data-validation-required-message="This field is required" max="11">
+                                      <input type="number" name="telefono" class="form-control" required data-validation-required-message="Este campo es requerido" max="11">
                                     </div>
                                   </div>
                                 </div>
@@ -163,7 +190,7 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
-                                  <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
+                                  <button type="submit" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
                                 </div>
                               </form>
                             </div>

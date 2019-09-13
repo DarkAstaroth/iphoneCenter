@@ -24,5 +24,27 @@ class MvcController{
 		$respuesta= EnlacesPaginas::enlacesPaginasModel($enlacesController);
 		include $respuesta;
 	}
+
+      // registro de usuarios
+
+      public function registroUsuarioController(){
+        if (isset($_POST["email"])) {
+          $datosControllerUsuario= array(
+              'emails' => $_POST["email"]
+            );
+          $respuesta=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
+
+          if ($respuesta=="s") {
+      				header("location:../pages/index.php?action=okusu");
+      				ob_end_flush();
+
+      		}
+      		else{
+      			header("../src/location:index.php");
+      			ob_end_flush();
+      		}
+        }
+    }
+
 }
  ?>
