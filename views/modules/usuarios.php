@@ -20,87 +20,158 @@
           								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
           							</div>
           							<div class="modal-body">
-          								<form class="" action="index.html" method="post">
-                            <div class="form-group">
-                              <label for="">Email</label>
-                              <div class="controls">
-  			                         <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required">
-                              </div>
-                            </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab"><span class="hidden-sm-up"><i class="ion-home"></i></span> <span class="hidden-xs-down">Cliente</span></a> </li>
+                          <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab"><span class="hidden-sm-up"><i class="ion-person"></i></span> <span class="hidden-xs-down">Personal</span></a> </li>
 
-                            <div class="form-group">
-                              <label for="">Nombres</label>
-                              <div class="controls">
-  			                         <input type="text" name="nombres" class="form-control" required data-validation-required-message="This field is required">
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-md-6">
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content tabcontent-border">
+                          <div class="tab-pane active" id="home" role="tabpanel">
+                            <div class="pad">
+                                <form class="" action="index.html" method="post">
                                 <div class="form-group">
-                                  <label for="">Paterno</label>
+                                  <label for="">Email</label>
                                   <div class="controls">
-                                    <input type="text" name="paterno" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required">
                                   </div>
                                 </div>
-                              </div>
-                              <div class="col-md-6">
+
                                 <div class="form-group">
-                                  <label for="">Materno</label>
+                                  <label for="">Nombres</label>
                                   <div class="controls">
-                                    <input type="text" name="materno" class="form-control" required data-validation-required-message="This field is required">
+                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="This field is required">
                                   </div>
                                 </div>
-                              </div>
-                            </div>
 
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Fecha Nac.</label>
-                                  <small class="sidetitle">dd/mm/yyyy</small>
-                                    <input type="text" name"fecnac" class="form-control" id="date">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Paterno</label>
+                                      <div class="controls">
+                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="This field is required">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Materno</label>
+                                      <div class="controls">
+                                        <input type="text" name="materno" class="form-control" required data-validation-required-message="This field is required">
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Telefono</label>
-                                  <input type="number" name="telefono" class="form-control" required data-validation-required-message="This field is required" max="11">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">CI</label>
+                                        <input type="number" name="fecnac" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Telefono</label>
+                                      <input type="number" name="telefono" class="form-control" required data-validation-required-message="This field is required" max="11">
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
+                                <div class="form-group">
+                                  <label for="">Dirección</label>
+                                    <div class="controls">
+                                      <textarea name="dir" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
+                                </div>
+                              </form>
                             </div>
+                          </div>
 
-                            <div class="form-group">
-                              <label for="">Dirección</label>
-                                <div class="controls">
-                    							<textarea name="dir" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
-                    						</div>
+                          <div class="tab-pane pad" id="profile" role="tabpanel">
+                          <div class="pad">
+                                <form class="" action="index.html" method="post">
+                                <div class="form-group">
+                                  <label for="">Email</label>
+                                  <div class="controls">
+                                    <input type="email" name="email" class="form-control" required data-validation-required-message="This field is required">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="">Nombres</label>
+                                  <div class="controls">
+                                    <input type="text" name="nombres" class="form-control" required data-validation-required-message="This field is required">
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Paterno</label>
+                                      <div class="controls">
+                                        <input type="text" name="paterno" class="form-control" required data-validation-required-message="This field is required">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Materno</label>
+                                      <div class="controls">
+                                        <input type="text" name="materno" class="form-control" required data-validation-required-message="This field is required">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">CI</label>
+                                        <input type="text" name="fecnac" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="">Telefono</label>
+                                      <input type="number" name="telefono" class="form-control" required data-validation-required-message="This field is required" max="11">
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="">Dirección</label>
+                                    <div class="controls">
+                                      <textarea name="dir" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="">Rol</label>
+                                  <div class="controls">
+                                    <fieldset>
+                                      <input name="role" type="radio" id="radio1" value="Yes" required>
+                                      <label for="radio1">Administrador</label>
+                                    </fieldset>
+                                    <fieldset>
+                                      <input name="role" type="radio" id="radio2" value="No">
+                                      <label for="radio2">Empleado</label>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
+                                </div>
+                              </form>
                             </div>
+                          </div>
 
-                            <div class="form-group">
-                              <label for="">Rol</label>
-                              <div class="controls">
-                                <fieldset>
-                                  <input name="role" type="radio" id="radio1" value="Yes" required>
-                                  <label for="radio1">Administrador</label>
-                                </fieldset>
-                                <fieldset>
-                                  <input name="role" type="radio" id="radio2" value="No">
-                                  <label for="radio2">Empleado</label>
-                                </fieldset>
-                                <fieldset>
-                                  <input name="role" type="radio" id="radio3" value="No">
-                                  <label for="radio3">Cliente</label>
-                                </fieldset>
-                              </div>
-                            </div>
-
-                          </form>
+                        </div>
           							</div>
-          							<div class="modal-footer">
-          								<button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cerrar</button>
-                          <button type="button" class="btn btn-success waves-effect" data-dismiss="modal">Registrar </button>
-          							</div>
+
           						</div>
           						<!-- /.modal-content -->
           					</div>

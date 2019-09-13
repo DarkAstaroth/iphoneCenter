@@ -3,7 +3,7 @@
   <section class="sidebar">
     <ul class="sidebar-menu" data-widget="tree">
       <!-- opcion usuario -->
-      <li class="treeview active">
+      <li class="treeview">
          <a href="#">
            <i class="iconsmind-User"></i>
            <span>Usuarios</span>
