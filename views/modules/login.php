@@ -1,3 +1,7 @@
+<?php
+ $login = new MvcController();
+ $login-> loginUsuario();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.png">
 
-    <title>iPhoneCenter Log in</title>
+    <title>iPhoneCenter- Inicio de Sesión</title>
 	<link rel="stylesheet" href="assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="src/css/bootstrap-extend.css">
@@ -29,18 +33,20 @@
 			  Iniciar Sesion para continuar
 			</div>
 			<div class="card-body">
-			  <img src="images/avatar/2.jpg" class="img-fluid rounded-circle w-150 mb-10">
-			  <h4 class="text-center mb-20">Mario Silva</h4>
-			  <form action="src/pages/index.php?action=home" method="post" class="form-signin">
-				<input type="email" class="form-control mb-2" placeholder="Email" required autofocus>
-				<input type="password" class="form-control mb-2" placeholder="Password" required>
-				<button class="btn btn-lg btn-primary btn-block mb-20" type="submit">Iniciar Sesion</button>
-				  <div class="checkbox float-left">
-					<input type="checkbox" id="basic_checkbox_1" >
-					<label for="basic_checkbox_1">Recordarme</label>
-				  </div>
-				<a href="#" class="float-right">Necesitas Ayuda?</a>
+			  <img src="images/avatar/logo.jpg" class="img-fluid rounded-circle w-150 mb-10">
+			  <h4 class="text-center mb-20">iPhoneCenter</h4>
+
+			  <form method="post">
+  				<input type="email" name="email" class="form-control mb-2" placeholder="Email" required autofocus>
+  				<input type="password" name="pass" class="form-control mb-2" placeholder="Password" required>
+  				<button class="btn btn-lg btn-primary btn-block mb-20" type="submit">Iniciar Sesion</button>
+  				  <div class="checkbox float-left">
+  					<input type="checkbox" id="basic_checkbox_1" >
+  					<label for="basic_checkbox_1">Recordarme</label>
+  				  </div>
+  				<a href="#" class="float-right">Necesitas Ayuda?</a>
 			  </form>
+
 			</div>
 		  </div>
 		  <a href="register.html" class="float-right text-white">Crear una cuenta</a>
@@ -50,5 +56,17 @@
 	<script src="assets/vendor_components/jquery/dist/jquery.min.js"></script>
 	<script src="assets/vendor_components/popper/dist/popper.min.js"></script>
 	<script src="assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/vendor_components/sweetalert/sweetalert.min.js"></script>
+  <script src="assets/vendor_components/sweetalert/jquery.sweet-alert.custom.js"></script>
+
+  <?php if (isset($_GET['action'])): ?>
+    <?php if ($_GET['action'] =='error'): ?>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript">
+         swal("Error!", "Datos de usuario incorrectos", "error");
+      </script>
+    <?php endif ?>
+  <?php endif ?>
+  
 </body>
 </html>

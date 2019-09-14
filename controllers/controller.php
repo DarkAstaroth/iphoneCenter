@@ -25,6 +25,32 @@ class MvcController{
 		include $respuesta;
 	}
 
+    public function loginUsuario(){
+
+      if (isset($_POST["email"])) {
+
+        $datosControllerLogin= array(  'email' => $_POST["email"],
+                      'pass' => $_POST["pass"]
+          );
+
+        $respuesta=datos::loginUsuarioModel($datosControllerLogin,"usuario");
+        $resultados = get_object_vars( $respuesta );
+
+        if ($resultados["pass"] == $_POST["pass"] ) {
+          session_start();
+          $_SESSION["validar"]==true;
+            header("location:src/pages/index.php?action=loginSuccess");
+            ob_end_flush();
+        }
+        else{
+          header("location:index.php?action=error");
+          ob_end_flush();
+        }
+
+    }
+  }
+
+
       // registro de usuarios
 
       public function registroUsuarioController(){
