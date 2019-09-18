@@ -1,4 +1,6 @@
-CREATE TABLE usuario (
+CREATE DATABASE idatabase;
+use idatabase;
+ CREATE TABLE usuario (
   idusuario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   email VARCHAR(100) NULL,
   pass INTEGER UNSIGNED NULL,
@@ -42,5 +44,3 @@ CREATE TABLE cliente (
       ON DELETE CASCADE
       ON UPDATE CASCADE
 );
-
-
