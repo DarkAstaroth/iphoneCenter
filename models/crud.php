@@ -41,4 +41,12 @@ class datos extends conexion{
 				}
 
 	}
+
+  public function validacionUsuarioModel($datosModel,$tabla){
+    $db=new conexion();
+    $stmt=$db->pdo->prepare("SELECT * FROM $tabla WHERE email=:email");
+    $stmt->bindParam(":email",$datosModel["emails"],PDO::PARAM_STR);
+    $stmt->execute();
+    return $stmt->fetchColumn();
+  }
 }
