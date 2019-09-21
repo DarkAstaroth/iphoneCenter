@@ -26,7 +26,7 @@
 		<?php if ($_GET['action'] =='errormail'): ?>
 			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 			<script type="text/javascript">
-				 swal("Error!", "Se ha producido un error intenta nuevamente", "error");
+				 swal("Error!", "La cuenta de correo ya fue registrada", "error");
 			</script>
 		<?php endif ?>
 

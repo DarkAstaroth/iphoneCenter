@@ -10,6 +10,9 @@
         elseif ($enlacesModel=="okusu") {
     			$module="../../views/modules/usuarios.php";
     		}
+        elseif ($enlacesModel=="errormail") {
+    			$module="../../views/modules/usuarios.php";
+    		}
         elseif ($enlacesModel=="loginSuccess") {
     			$module="../../views/modules/home.php";
     		}

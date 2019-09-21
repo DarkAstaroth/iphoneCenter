@@ -60,18 +60,19 @@ class MvcController{
             );
           $validacion=datos::validacionUsuarioModel($datosControllerUsuario,"usuario");
           if ($validacion==0) {
-            
+
             $respuesta=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
             if ($respuesta==0) {
         				header("location:../pages/index.php?action=okusu");
         				ob_end_flush();
-
         		}
+
         		else{
               header("location:../pages/index.php");
               ob_end_flush();
         		}
-          } else {
+          }
+          else {
             header("location:../pages/index.php?action=errormail");
             ob_end_flush();
           }
