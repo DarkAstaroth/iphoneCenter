@@ -32,6 +32,17 @@
 
 	<?php endif ?>
 
+	<?php if (isset($_GET['action'])): ?>
+
+		<?php if ($_GET['action'] =='erroru'): ?>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+			<script type="text/javascript">
+				 swal("Error!", "Se produjo un error inesperado vuelve a intertar mas tarde", "error");
+			</script>
+		<?php endif ?>
+
+	<?php endif ?>
+
 
               <div class="content-wrapper">
                 <section class="content-header">

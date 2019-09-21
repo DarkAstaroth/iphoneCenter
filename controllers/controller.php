@@ -59,16 +59,18 @@ class MvcController{
               'emails' => $_POST["email"]
             );
           $validacion=datos::validacionUsuarioModel($datosControllerUsuario,"usuario");
+
           if ($validacion==0) {
 
             $respuesta=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
-            if ($respuesta==0) {
+
+            if ($respuesta) {
         				header("location:../pages/index.php?action=okusu");
         				ob_end_flush();
         		}
 
         		else{
-              header("location:../pages/index.php");
+              header("location:../pages/index.php?action=erroru");
               ob_end_flush();
         		}
           }

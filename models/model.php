@@ -13,6 +13,9 @@
         elseif ($enlacesModel=="errormail") {
     			$module="../../views/modules/usuarios.php";
     		}
+        elseif ($enlacesModel=="erroru") {
+    			$module="../../views/modules/usuarios.php";
+    		}
         elseif ($enlacesModel=="loginSuccess") {
     			$module="../../views/modules/home.php";
     		}

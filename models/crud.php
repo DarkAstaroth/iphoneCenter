@@ -20,26 +20,34 @@ class datos extends conexion{
 
 	}
 
+  public function gPass(){
+  $caracteres = '0123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$#@!?=&{}[]';
+    $caractereslong = strlen($caracteres);
+    $clave = '';
+    for($i = 0; $i < 10; $i++) {
+      $clave .= $caracteres[rand(0, $caractereslong - 1)];
+    }
+      return $clave;
+  }
+
   public function registroUsuarioModel($datosModel,$tabla){
-				$db=new conexion();
-				$stmt=$db->pdo->prepare(
+          $gPass=datos::gPass();
+          $db=new conexion();
+          $stmt=$db->pdo->prepare(
+            "INSERT INTO usuario()
+            VALUES (null,?,?,'3')
+            ");
 
-					"INSERT INTO $tabla
-					(email) VALUES
-					(:idpersona)");
-
-				$stmt->bindParam(":idpersona",$datosModel["emails"],PDO::PARAM_STR);
+          $stmt->bindParam(1,$datosModel["emails"],PDO::PARAM_STR);
+          $stmt->bindParam(2,$gPass,PDO::PARAM_STR);
+          // $stmt->bindParam(":pass",$gPass,PDO::PARAM_STR);
 
 				if ($stmt->execute()) {
-
-					return "s";
+					return true;
 				}
 				else{
-
-					return "n";
-
+					return false;
 				}
-
 	}
 
   public function validacionUsuarioModel($datosModel,$tabla){
@@ -47,6 +55,6 @@ class datos extends conexion{
     $stmt=$db->pdo->prepare("SELECT * FROM $tabla WHERE email=:email");
     $stmt->bindParam(":email",$datosModel["emails"],PDO::PARAM_STR);
     $stmt->execute();
-    return $stmt->fetchColumn();
+    return $stmt->rowCount();
   }
 }
