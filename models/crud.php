@@ -35,7 +35,7 @@ class datos extends conexion{
           $db=new conexion();
           $stmt=$db->pdo->prepare(
             "INSERT INTO $tabla()
-            VALUES (null,?,?,'3')
+            VALUES (null,?,?,'Cliente','Activo')
             ");
 
           $stmt->bindParam(1,$datosModel["emails"],PDO::PARAM_STR);

@@ -113,13 +113,17 @@ class MvcController{
 		}
 
 		foreach ($array as $row => $item) {
+      $estado="";
+      if ($item["estado"]=='Activo') {$estado='badge-success';}
+      if ($item["estado"]=='Bloqueado') {$estado='badge-danger';}
+      if ($item["estado"]=='Pendiente') {$estado='badge-warning';}
 			echo '<tr>
 					<td>'.$item["idusuario"].'</td>
           <td>'.$item["ci"].'</td>
 					<td>'.$item["email"].'</td>
 					<td>'.$item["paterno"].' '.$item["materno"].' '.$item["nombres"].'</td>
 					<td>'.$item["tipo"].'</td>
-					<td></td>
+					<td><span class="badge badge-lg '.$estado.'">'.$item["estado"].'</span></td>
           <td>
                 <a href="" data-toggle="tooltip" data-placement="top" title="Desbloquear"><i class="fa fa-unlock fa-2x" to> </i></a>
                 <a href="" data-toggle="tooltip" data-placement="top" title="Bloquear"><i class="fa fa-lock fa-2x"> </i></a>
