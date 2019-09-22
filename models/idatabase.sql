@@ -5,6 +5,7 @@ use idatabase;
   email VARCHAR(100) NULL,
   pass VARCHAR(100) NULL,
   tipo VARCHAR(20) NULL,
+  estado VARCHAR(100) NULL,
   PRIMARY KEY(idusuario)
 );
 
