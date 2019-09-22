@@ -58,9 +58,9 @@ class datos extends conexion{
 
           $stmt->bindParam(1,$datosModel["ci"],PDO::PARAM_STR);
           $stmt->bindParam(2,$datosModel["idusuario"],PDO::PARAM_STR);
-          $stmt->bindParam(3,$datosModel["nombres"],PDO::PARAM_STR);
-          $stmt->bindParam(4,$datosModel["paterno"],PDO::PARAM_STR);
-          $stmt->bindParam(5,$datosModel["materno"],PDO::PARAM_STR);
+          $stmt->bindParam(3,strtoupper($datosModel["nombres"]),PDO::PARAM_STR);
+          $stmt->bindParam(4,strtoupper($datosModel["paterno"]),PDO::PARAM_STR);
+          $stmt->bindParam(5,strtoupper($datosModel["materno"]),PDO::PARAM_STR);
           $stmt->bindParam(6,$datosModel["telefono"],PDO::PARAM_STR);
           $stmt->bindParam(7,$datosModel["dir"],PDO::PARAM_STR);
 
