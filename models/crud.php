@@ -21,7 +21,7 @@ class datos extends conexion{
 	}
 
   public function gPass(){
-  $caracteres = '0123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$#@!?=&{}[]';
+  $caracteres = '0123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$#@!?=&';
     $caractereslong = strlen($caracteres);
     $clave = '';
     for($i = 0; $i < 10; $i++) {
