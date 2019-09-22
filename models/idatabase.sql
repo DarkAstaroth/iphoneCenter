@@ -3,7 +3,7 @@ use idatabase;
  CREATE TABLE usuario (
   idusuario INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   email VARCHAR(100) NULL,
-  pass INTEGER UNSIGNED NULL,
+  pass VARCHAR(100) NULL,
   tipo VARCHAR(20) NULL,
   PRIMARY KEY(idusuario)
 );
