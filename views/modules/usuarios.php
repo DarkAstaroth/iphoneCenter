@@ -115,7 +115,7 @@
                                   <div class="col-md-6">
                                     <div class="form-group">
                                       <label for="">CI</label>
-                                        <input type="number" name="fecnac" class="form-control">
+                                        <input type="number" name="ci" class="form-control">
                                     </div>
                                   </div>
                                   <div class="col-md-6">

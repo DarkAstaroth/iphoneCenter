@@ -62,13 +62,34 @@ class MvcController{
 
           if ($validacion==0) {
 
-            $respuesta=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
+            $idusuario=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
 
-            if ($respuesta) {
-        				header("location:../pages/index.php?action=okusu");
+            $datosControllerPersona= array(
+              'idusuario' =>$idusuario,
+              'nombres' => $_POST["nombres"],
+              'paterno' => $_POST["paterno"],
+              'materno' => $_POST["materno"],
+              'ci' => $_POST["ci"],
+              'telefono' => $_POST["telefono"],
+              'nombres' => $_POST["nombres"],
+              'dir' => $_POST["dir"]
+              );
+
+            if ($idusuario!=null) {
+
+              $respuesta=datos::registroPersonaModel($datosControllerPersona,"persona");
+
+              if ($respuesta) {
+
+                header("location:../pages/index.php?action=okusu");
         				ob_end_flush();
-        		}
 
+              } else {
+                header("location:../pages/index.php?action=erroru");
+                ob_end_flush();
+              }
+
+        		}
         		else{
               header("location:../pages/index.php?action=erroru");
               ob_end_flush();

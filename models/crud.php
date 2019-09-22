@@ -34,13 +34,35 @@ class datos extends conexion{
           $gPass=datos::gPass();
           $db=new conexion();
           $stmt=$db->pdo->prepare(
-            "INSERT INTO usuario()
+            "INSERT INTO $tabla()
             VALUES (null,?,?,'3')
             ");
 
           $stmt->bindParam(1,$datosModel["emails"],PDO::PARAM_STR);
           $stmt->bindParam(2,$gPass,PDO::PARAM_STR);
-          // $stmt->bindParam(":pass",$gPass,PDO::PARAM_STR);
+
+				if ($stmt->execute()) {
+					return $idpersona=$db->pdo->lastInsertId();
+				}
+				else{
+					return null;
+				}
+	}
+
+  public function registroPersonaModel($datosModel,$tabla){
+          $db=new conexion();
+          $stmt=$db->pdo->prepare(
+            "INSERT INTO $tabla()
+            VALUES (?,?,?,?,?,?,?)
+            ");
+
+          $stmt->bindParam(1,$datosModel["ci"],PDO::PARAM_STR);
+          $stmt->bindParam(2,$datosModel["idusuario"],PDO::PARAM_STR);
+          $stmt->bindParam(3,$datosModel["nombres"],PDO::PARAM_STR);
+          $stmt->bindParam(4,$datosModel["paterno"],PDO::PARAM_STR);
+          $stmt->bindParam(5,$datosModel["materno"],PDO::PARAM_STR);
+          $stmt->bindParam(6,$datosModel["telefono"],PDO::PARAM_STR);
+          $stmt->bindParam(7,$datosModel["dir"],PDO::PARAM_STR);
 
 				if ($stmt->execute()) {
 					return true;
