@@ -82,5 +82,32 @@ class MvcController{
         }
     }
 
+    public function listaUsuarioController(){
+
+		$respuesta=datos::listaUsuarioModel("usuario");
+
+		$array=array();
+		foreach ($respuesta as $key => $value) {
+			array_push($array,get_object_vars($value));
+		}
+
+		foreach ($array as $row => $item) {
+			echo '<tr>
+					<td>'.$item["idusuario"].'</td>
+					<td>'.$item["email"].'</td>
+					<td></td>
+					<td>'.$item["tipo"].'</td>
+					<td></td>
+          <td>
+                <a href="" data-toggle="tooltip" data-placement="top" title="Desbloquear"><i class="fa fa-unlock fa-2x" to> </i></a>
+                <a href="" data-toggle="tooltip" data-placement="top" title="Bloquear"><i class="fa fa-lock fa-2x"> </i></a>
+                <a href="" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil fa-2x"> </i></a>
+                <a href="" data-toggle="tooltip" data-placement="top" title="Eliminar"><i class="fa fa-trash fa-2x"> </i></a>
+          </td>
+				</tr>';
+		}
+
+	}
+
 }
  ?>

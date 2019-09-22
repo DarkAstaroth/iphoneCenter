@@ -57,4 +57,16 @@ class datos extends conexion{
     $stmt->execute();
     return $stmt->rowCount();
   }
+
+  public function listaUsuarioModel($tabla){
+
+				$db=new conexion();
+				$stmt=$db->pdo->prepare(
+
+					"SELECT *
+					 FROM $tabla ");
+				$stmt->execute();
+				return $stmt->fetchAll();
+
+	}
 }
