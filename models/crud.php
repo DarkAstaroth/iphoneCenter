@@ -85,8 +85,9 @@ class datos extends conexion{
 				$db=new conexion();
 				$stmt=$db->pdo->prepare(
 
-					"SELECT *
-					 FROM $tabla ");
+					"SELECT u.*,p.*
+					 FROM $tabla u, persona p
+           WHERE u.idusuario=p.idusuario");
 				$stmt->execute();
 				return $stmt->fetchAll();
 

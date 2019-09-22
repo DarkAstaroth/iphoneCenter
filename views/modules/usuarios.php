@@ -247,6 +247,7 @@
 																	<tr>
 																		<tr>
 	                      							<th width="5%">Codigo</th>
+																			<th width="5%">CI</th>
 	                      							<th width="15%">Email</th>
 	                      							<th>Nombres</th>
 	                      							<th>Tipo</th>

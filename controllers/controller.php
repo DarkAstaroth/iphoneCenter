@@ -115,8 +115,9 @@ class MvcController{
 		foreach ($array as $row => $item) {
 			echo '<tr>
 					<td>'.$item["idusuario"].'</td>
+          <td>'.$item["ci"].'</td>
 					<td>'.$item["email"].'</td>
-					<td></td>
+					<td>'.$item["paterno"].' '.$item["materno"].' '.$item["nombres"].'</td>
 					<td>'.$item["tipo"].'</td>
 					<td></td>
           <td>
