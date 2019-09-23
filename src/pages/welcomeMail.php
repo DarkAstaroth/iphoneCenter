@@ -1,4 +1,9 @@
-
+<?php
+  $headers='From: iPhoneCenter soporte@iphonecenter-bo.com'."\r\n".
+            'Reply-to: soporte@iphonecenter-bo.com' . "\r\n" .
+            'X-Mailer:PHP/'.phpversion()."\r\n".
+            'Content-Type: text/html; charset=iso-8859-1';
+$mensaje='
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +13,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <style type="text/css">
     /* FONTS */
-    @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 
     /* CLIENT-SPECIFIC STYLES */
     body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -45,8 +50,8 @@
 <body style="background-color: #f3f5f7; margin: 0 !important; padding: 0 !important;">
 
 <!-- HIDDEN PREHEADER TEXT -->
-<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Poppins', sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-    We're thrilled to have you here! Get ready to dive into your new account.
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Poppins, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+    Were thrilled to have you here! Get ready to dive into your new account.
 </div>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#e2e2e2;">
@@ -62,7 +67,7 @@
                 <tr>
                     <td align="center" valign="top" style="padding: 40px 10px 40px 10px;">
                         <a href="http://app.iphonecenter-bo.com/" target="_blank" style="text-decoration: none;">
-              							<!-- <span style="display: block; font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 36px;" border="0"><b>NeoX</b></span> -->
+              							<!-- <span style="display: block; font-family: Poppins, sans-serif; color: #ffffff; font-size: 36px;" border="0"><b>NeoX</b></span> -->
                             <img src="http://app.iphonecenter-bo.com/images/favicon.png" height="65" width="65"alt="">
                         </a>
                     </td>
@@ -85,7 +90,7 @@
             <![endif]-->
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
-                    <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Poppins', sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 2px; line-height: 48px;">
+                    <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: Poppins, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 2px; line-height: 48px;">
                       <h1 style="font-size: 42px; font-weight: 700; margin: 0;">¡Bienvenido!</h1>
                     </td>
                 </tr>
@@ -108,7 +113,7 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
               <!-- COPY -->
               <tr>
-                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
                   <p style="margin: 0;">¡Gracias por registrarse en iPhoneCenter Esperamos que disfrute su tiempo con nosotros. Verifique su cuenta y actualice su perfil.</p>
                 </td>
               </tr>
@@ -130,13 +135,13 @@
               </tr>
               <!-- COPY -->
               <tr>
-                <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 20px 30px; color: #666666; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
+                <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 20px 30px; color: #666666; font-family:  Poppins,sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
                   <p style="margin: 0;">Si tiene alguna pregunta, solo responda a este correo electrónico, siempre estamos felices de ayudarlo.</p>
                 </td>
               </tr>
               <!-- COPY -->
               <tr>
-                <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; border-radius: 0px 0px 0px 0px; color: #666666; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; line-height: 25px;">
+                <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; border-radius: 0px 0px 0px 0px; color: #666666; font-family:Poppins,  sans-serif; font-size: 14px; font-weight: 400; line-height: 25px;">
                   <p style="margin: 0;">Equipo,<br>iPhoneCenter</p>
                 </td>
               </tr>
@@ -159,7 +164,7 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <!-- HEADLINE -->
                 <tr>
-                  <td bgcolor="#398bf7" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
+                  <td bgcolor="#398bf7" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: Poppins,  sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
                     <h2 style="font-size: 16px; font-weight: 400; color: #ffffff; margin: 0;">Necesitas Ayuda?</h2>
                     <p style="margin: 0; font-size: 14px;"><a href="#" target="_blank" style="color: #ffffff;">Envianos un mensaje</a></p>
                   </td>
@@ -183,7 +188,7 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
               <!-- NAVIGATION -->
               <tr>
-                <td bgcolor="#f4f4f4" align="left" style="padding: 30px 30px 30px 30px; color: #aaaaaa; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
+                <td bgcolor="#f4f4f4" align="left" style="padding: 30px 30px 30px 30px; color: #aaaaaa; font-family:  Poppins,sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
                   <p style="margin: 0;">
                     <a href="#" target="_blank" style="color: #999999; font-weight: 700;">Panel de control</a> -
                     <a href="#" target="_blank" style="color: #999999; font-weight: 700;">Mi Cuenta</a> -
@@ -193,26 +198,26 @@
               </tr>
               <!-- PERMISSION REMINDER -->
               <tr>
-                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
+                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: Poppins,  sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
                   <p style="margin: 0;">Recibiste este correo electrónico porque acabas de registrarte para una nueva cuenta.</p>
                 </td>
               </tr>
               <!-- UNSUBSCRIBE -->
               <!-- <tr>
-                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;">
+                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: Poppins,  sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;">
                   <p style="margin: 0;">If these emails get annoying, please feel free to <a href="#" target="_blank" style="color: #999999; font-weight: 700;">unsubscribe</a>.</p>
                 </td>
               </tr> -->
               <!-- ADDRESS -->
               <tr>
-                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
+                <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #aaaaaa; font-family: Poppins,  sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
                   <p style="margin: 0;">iPhoneCenter - Galeria Rosalva #925 piso 1 Feria Huyustus, Casilla: 14065, La Paz</p>
                   <p style="margin: 0;">iPhoneCenter - Galeria Rosalva #925 piso 1 Feria Huyustus, Casilla: 14065, Santa Cruz</p>
                 </td>
               </tr>
 		      <!-- COPYRIGHT -->
               <tr>
-                <td align="center" style="padding: 30px 30px 5px 30px; color: #000; font-family: 'Poppins', sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
+                <td align="center" style="padding: 30px 30px 5px 30px; color: #000; font-family:  Poppins, sans-serif; font-size: 12px; font-weight: 400; line-height: 18px;">
                   <p style="margin: 0;">Copyright © 2019 iPhoneCenter. Todos los derechos reservados</p>
                 </td>
               </tr>
@@ -228,3 +233,9 @@
 
 </body>
 </html>
+'
+;
+
+mail('mninahuanca3@gmail.com','Mensaje de prueba',$mensaje,$headers);
+echo 'mensaje enviado';
+ ?>

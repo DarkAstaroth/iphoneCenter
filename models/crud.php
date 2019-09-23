@@ -65,6 +65,7 @@ class datos extends conexion{
           $stmt->bindParam(7,$datosModel["dir"],PDO::PARAM_STR);
 
 				if ($stmt->execute()) {
+          
 					return true;
 				}
 				else{

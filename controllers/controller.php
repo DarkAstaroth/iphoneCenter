@@ -65,6 +65,7 @@ class MvcController{
             $idusuario=datos::registroUsuarioModel($datosControllerUsuario,"usuario");
 
             $datosControllerPersona= array(
+              'email' => $_POST["email"],
               'idusuario' =>$idusuario,
               'nombres' => $_POST["nombres"],
               'paterno' => $_POST["paterno"],
