@@ -1,9 +1,5 @@
 <?php
-  $headers='From: iPhoneCenter soporte@iphonecenter-bo.com'."\r\n".
-            'Reply-to: soporte@iphonecenter-bo.com' . "\r\n" .
-            'X-Mailer:PHP/'.phpversion()."\r\n".
-            'Content-Type: text/html; charset=iso-8859-1';
-$mensaje='
+$mail->Body='
 <!DOCTYPE html>
 <html>
 <head>
@@ -114,7 +110,7 @@ $mensaje='
               <!-- COPY -->
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: Poppins, sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
-                  <p style="margin: 0;">¡Gracias por registrarse en iPhoneCenter Esperamos que disfrute su tiempo con nosotros. Verifique su cuenta y actualice su perfil.</p>
+                  <p style="margin: 0;">Hola '.$datosControllerPersona['nombres'].' ¡Gracias por registrarse en iPhoneCenter Esperamos que disfrute su tiempo con nosotros. Verifique su cuenta y actualice su perfil.</p>
                 </td>
               </tr>
               <!-- BULLETPROOF BUTTON -->
@@ -125,7 +121,7 @@ $mensaje='
                       <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">
                         <table border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                              <td align="center" style="border-radius: 3px;" bgcolor="#398bf7"><a href="#" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 12px 50px; border-radius: 2px; border: 1px solid #398bf7; display: inline-block;">Mi Cuenta</a></td>
+                              <td align="center" style="border-radius: 3px;" bgcolor="#398bf7"><a href="#" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 12px 50px; border-radius: 2px; border: 1px solid #398bf7; display: inline-block;">Actualizar datos</a></td>
                           </tr>
                         </table>
                       </td>
@@ -235,7 +231,4 @@ $mensaje='
 </html>
 '
 ;
-
-mail('mninahuanca3@gmail.com','Mensaje de prueba',$mensaje,$headers);
-echo 'mensaje enviado';
  ?>

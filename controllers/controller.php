@@ -81,6 +81,16 @@ class MvcController{
               $respuesta=datos::registroPersonaModel($datosControllerPersona,"persona");
 
               if ($respuesta) {
+                try {
+                  // shell_exec("php ../pages/mailUsuario.php");
+                  ob_start();
+                  include('../pages/mailUsuario.php');
+                  $content = ob_get_contents();
+                  ob_end_clean();
+
+                } catch (Exception $e) {
+                  echo "Ocurrio un error al Crear El Usuario: {$mail->ErrorInfo}";
+                }
 
                 header("location:../pages/index.php?action=okusu");
         				ob_end_flush();
